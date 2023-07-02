@@ -27,7 +27,7 @@ function showCatInfo(cat) {
 
   const catInfoHTML = `<div class="cat">
    <img loading="eager" class="img-cat " src="${cat[0].url}" alt="Cat Image"> 
-    <div class="cat-contaeiner">
+    <div class="cat-container">
     <h2>${name}</h2>
     <p><strong>Description:</strong> ${description}</p>
     <p><strong>Temperament:</strong> ${temperament}</p>

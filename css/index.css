@@ -4,13 +4,15 @@
 }
 
 .img-cat {
-  width: 500px;
-  height: 400px;
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
 }
 
 .cat-container {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  max-width: 600px;
+  min-width: 250px;
 }
 
 .breed-select {
@@ -20,8 +22,7 @@
 .breed-select {
   display: none;
   margin-bottom: 20px;
-
 }
 .error {
-  display : none;
+  display: none;
 }
