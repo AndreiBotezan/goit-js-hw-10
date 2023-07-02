@@ -9,13 +9,13 @@ const error = document.querySelector('p.error');
 const catEl = document.querySelector('.cat');
 
 function hideLoader() {
-  return (loader.style.display = 'none',catInfoDiv.style.display = 'block');
+  return (loader.style.display = 'none'), (catInfoDiv.style.display = 'block');
 }
 function Loader() {
-  return (loader.style.display = 'block', catInfoDiv.style.display = 'none')
+  return (loader.style.display = 'block'), (catInfoDiv.style.display = 'none');
 }
 function vad() {
-  return breedSelect.style.display = 'block';
+  return (breedSelect.style.display = 'block');
 }
 function populateBreedSelect(breeds) {
   breedSelect.innerHTML = breeds
@@ -26,7 +26,7 @@ function showCatInfo(cat) {
   const { name, description, temperament } = cat[0].breeds[0];
 
   const catInfoHTML = `<div class="cat">
-   <img loading="eager" class="cat-img" src="${cat[0].url}" alt="${breed.name} cat"> 
+   <img loading="eager" class="cat-img" src="${cat[0].url}" alt="${name} cat"> 
     <div class="cat-container">
     <h2>${name}</h2>
     <p><b>Description:</b> ${description}</p>
@@ -39,7 +39,7 @@ function showCatInfo(cat) {
 }
 
 function handleBreedSelect(event) {
-    Loader();
+  Loader();
   setTimeout(() => {
     const breedId = event.target.value;
     fetchCatByBreed(breedId)

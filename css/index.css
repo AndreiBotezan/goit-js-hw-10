@@ -6,7 +6,7 @@
 .cat-img {
   flex: 1;
   max-width: 50%;
-  height: 100%;
+  height: auto;
 }
 
 .cat-container {
