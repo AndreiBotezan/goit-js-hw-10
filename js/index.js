@@ -26,11 +26,11 @@ function showCatInfo(cat) {
   const { name, description, temperament } = cat[0].breeds[0];
 
   const catInfoHTML = `<div class="cat">
-   <img loading="eager" class="img-cat " src="${cat[0].url}" alt="Cat Image"> 
+   <img loading="eager" class="cat-img" src="${cat[0].url}" alt="${breed.name} cat"> 
     <div class="cat-container">
     <h2>${name}</h2>
-    <p><strong>Description:</strong> ${description}</p>
-    <p><strong>Temperament:</strong> ${temperament}</p>
+    <p><b>Description:</b> ${description}</p>
+    <p><b>Temperament:</b> ${temperament}</p>
     </div>
      </div>
   `;
